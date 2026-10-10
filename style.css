@@ -157,3 +157,46 @@ footer {
     overflow-wrap: anywhere;
   }
 }
+
+.auth-form {
+  width: min(400px, 100%);
+  margin: 30px auto 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+.auth-form label {
+  color: #c7c0c3;
+  font-size: 11px;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 14px;
+  color: white;
+  background: #101012;
+  border: 1px solid #484044;
+  font: 14px Arial, sans-serif;
+  border-radius: 3px;
+}
+
+.auth-form input:focus {
+  outline: 1px solid #e74750;
+  border-color: #e74750;
+}
+
+#toggleBtn, #logoutBtn {
+  display: block;
+  margin: 12px auto;
+}
+
+#message {
+  overflow-wrap: anywhere;
+}
+
+#accountInfo {
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}

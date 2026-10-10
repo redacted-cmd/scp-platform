@@ -39,13 +39,13 @@
 
   <footer> SCP.lol // UNOFFICIAL FAN PROJECT // PERSONNEL NETWORK </footer>
   <script>
-    const notice = document.getElementById("notice");
-    document.getElementById("createBtn").addEventListener("click", () => {
-      notice.textContent = "ACCOUNT REGISTRATION MODULE: COMING SOON.";
-    });
-    document.getElementById("loginBtn").addEventListener("click", () => {
-      notice.textContent = "PERSONNEL LOGIN MODULE: COMING SOON.";
-    });
-  </script>
+  document.getElementById("createBtn").addEventListener("click", () => {
+    window.location.href = "auth.html";
+  });
+
+  document.getElementById("loginBtn").addEventListener("click", () => {
+    window.location.href = "auth.html?mode=login";
+  });
+</script>
 </body>
 </html>

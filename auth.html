@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personnel Access — SCP.lol</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="index.html">SCP<span>.lol</span></a>
+    <span class="status">PERSONNEL ACCESS</span>
+  </header>
+
+  <main class="hero">
+    <p class="eyebrow">FOUNDATION PERSONNEL DATABASE</p>
+    <h1>ACCESS <span>TERMINAL</span></h1>
+    <p class="intro">Register a new personnel account or sign in.</p>
+
+    <form id="authForm" class="auth-form">
+      <label for="email">Email address</label>
+      <input id="email" type="email" autocomplete="email"
+        placeholder="you@example.com" required>
+
+      <label for="password">Password</label>
+      <input id="password" type="password"
+        autocomplete="current-password"
+        placeholder="At least 6 characters" minlength="6" required>
+
+      <button type="submit" id="submitBtn">CREATE ACCOUNT</button>
+    </form>
+
+    <button type="button" id="toggleBtn" class="secondary">
+      ALREADY REGISTERED? SIGN IN
+    </button>
+
+    <button type="button" id="logoutBtn" class="secondary" hidden>
+      SIGN OUT
+    </button>
+
+    <div id="message" class="notice" role="status" aria-live="polite"></div>
+    <p id="accountInfo" class="intro"></p>
+    <a href="index.html">← Back to homepage</a>
+  </main>
+
+  <script type="module" src="auth.js"></script>
+</body>
+</html>
